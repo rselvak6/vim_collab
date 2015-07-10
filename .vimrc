@@ -21,6 +21,8 @@ set visualbell
 
 set splitright "For right vertical split
 
+set tags=./tags,tags;$HOME "CTags
+
 "Buffer mappings"
 nnoremap <C-Up> <C-W><C-J>
 nnoremap <C-Down> <C-W><C-K>
@@ -33,9 +35,11 @@ nnoremap <C-S-Right> :bnext<CR>
 nnoremap <C-S-Left> :bprevious<CR>
 
 "Tab mappings"
+nnoremap w :w<CR>
+nnoremap q :q<CR>
 nnoremap WQ :wqa<CR>
 nnoremap QQ :qa!<CR>
-nnoremap T :tabnew<cr>
+nnoremap T :tabnew<Space>
 nnoremap ~ :tab sall<cr>
 map b gT
 map n gt
@@ -49,7 +53,7 @@ let g:bufferline_echo=0
 set statusline=%{bufferline#generate_string()}
 
 "Airline"
-set t_Co=256
+" set t_Co=256
 set laststatus=2
 set encoding=utf-8
 set ttimeoutlen=50
