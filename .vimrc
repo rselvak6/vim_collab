@@ -2,7 +2,7 @@ execute pathogen#infect()
 filetype indent plugin on
 
 syntax on
-"colorscheme badwolf
+colorscheme brogrammer
 set background=dark
 
 set nocompatible
@@ -69,7 +69,7 @@ set laststatus=2
 set encoding=utf-8
 set ttimeoutlen=50
 
-"let g:airline_theme = 'erez'
+let g:airline_theme = 'night_owl'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
